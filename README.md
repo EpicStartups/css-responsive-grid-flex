@@ -14,6 +14,8 @@ Design Reference:
 2. https://my.secretlab.co/products/titan-evo-2022-series?sku=R22PU-Stealth
 3. https://www.ikea.com/my/en/p/torgny-shelf-white-10259579/
 4. https://malaysia.indeed.com/jobs?q=job&l=Selangor&from=searchOnHP&vjk=fb50512068814ca3
+5. https://www.kickstarter.com/projects/insitushortfilm/in-situ-0?ref=section-homepage-projectcollection-2-staff-picks-newest
+6. https://www.kaggle.com/code/andls555/accountant-receivables-prediction-days-late
 
 CSS Grid Implementation: ./sticky-scroll.html
 
@@ -50,4 +52,5 @@ https://www.quackit.com/css/grid/examples/css_grid_website_layout_examples.cfm
 https://elad.medium.com/css-position-sticky-how-it-really-works-54cd01dc2d46
 
 ## References Responsive Layouts without Media queries with Grid & Flexbox
+
 https://css-tricks.com/responsive-layouts-fewer-media-queries/
