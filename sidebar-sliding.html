@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            height: 100vh;
+            grid-template-rows: 60px 1fr;
+            grid-template-columns: minmax(auto, 500px) 1fr;
+            grid-template-areas:
+                'sidebar header'
+                'sidebar content'
+            ;
+            margin: 0;
+        }
+
+        #header {
+            grid-area: sidebar-start / sidebar-start / header-end / header-end;
+            background-color: blue;
+        }
+
+        #sidebar {
+            grid-area: sidebar;
+            background-color: red;
+            transform: translateX(-100%);
+            transition: 200ms ease;
+            z-index: 1;
+            position: relative;
+        }
+
+        #sidebar.collapsed {
+            transform: translateX(0%);
+        }
+
+        #content {
+            grid-area: content-start / sidebar-start / content-end / content-end;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <button id="show-sidebar">Open</button>
+        header
+    </div>
+    <div id="sidebar">
+        <button id="close-sidebar">
+            << /button>
+                sidebar
+    </div>
+    <div id="content">content</div>
+
+
+</body>
+
+</html>

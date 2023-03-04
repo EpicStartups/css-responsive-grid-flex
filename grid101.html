@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #page {
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "hero hero hero"
+                "side-sticky main main"
+                "side-sticky main main"
+                "footer footer footer";
+            grid-template-rows: 1fr 2fr 4fr 1fr
+        }
+
+        header {
+            grid-area: header;
+            background-color: #fed330;
+            padding: 20px;
+        }
+
+        .main {
+            grid-area: main;
+            background-color: aliceblue;
+        }
+
+        .side-sticky {
+            grid-area: side-sticky;
+            position: sticky;
+            height: fit-content;
+            background-color: red;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: blue;
+        }
+
+        .hero {
+            grid-area: hero;
+            background-color: green;
+        }
+
+        .main-section {
+            height: 1000px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="page">
+        <header>Nav Bar Header</header>
+        <div class="hero">
+            hero
+        </div>
+        <div class="main">
+            <div class="main-section"></div>
+            main
+        </div>
+        <div class="side-sticky">
+            <div style="height: 100px">
+                side-sticky
+            </div>
+        </div>
+        <div class="footer">
+            footer
+        </div>
+    </section>
+</body>
+
+</html>
